@@ -1,0 +1,97 @@
+{"level":"error","message":{"body":{"requestId":"2"},"error":{"code":"LIMIT_UNEXPECTED_FILE","message":"Unexpected field","name":"MulterError","stack":"MulterError: Unexpected field\n    at wrappedFileFilter (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/multer/index.js:40:19)\n    at Multipart.<anonymous> (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/multer/lib/make-middleware.js:132:7)\n    at Multipart.emit (node:events:518:28)\n    at HeaderParser.cb (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/busboy/lib/types/multipart.js:358:14)\n    at HeaderParser.push (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/busboy/lib/types/multipart.js:162:20)\n    at SBMH.ssCb [as _cb] (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/busboy/lib/types/multipart.js:394:37)\n    at feed (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/streamsearch/lib/sbmh.js:248:10)\n    at SBMH.push (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/streamsearch/lib/sbmh.js:104:16)\n    at Multipart._write (/home/hamid/Desktop/Codes/rh-connect/backend/node_modules/busboy/lib/types/multipart.js:567:19)\n    at writeOrBuffer (node:internal/streams/writable:572:12)"},"event":"UNHANDLED_ERROR","headers":{"accept":"application/json, text/plain, */*","accept-encoding":"gzip, deflate, br, zstd","accept-language":"en-US,en;q=0.9","connection":"keep-alive","content-length":"121620","content-type":"multipart/form-data; boundary=----WebKitFormBoundaryTIvkuRc8BT821F3X","cookie":"token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1Mzk3NTgwMywiZXhwIjoxNzU0NTgwNjAzfQ.hdu81cLf56Siqm1e0B4tQuV4vLWrwck5i_kJ3o7o9I8","host":"localhost:3000","origin":"http://localhost:4200","referer":"http://localhost:4200/","sec-ch-ua":"\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Linux\"","sec-fetch-dest":"empty","sec-fetch-mode":"cors","sec-fetch-site":"same-site","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"},"ip":"::1","method":"POST","params":{},"path":"/api/requests/upload-file","query":{},"status":500,"timestamp":"2025-07-31T18:04:26.749Z","url":"/api/requests/upload-file"},"timestamp":"2025-07-31 23:04:26"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-10 12:08:36"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-10 12:08:37"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-10 12:08:38"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-10 16:34:04"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-10 16:34:05"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-10 16:34:05"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-10 16:56:29"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-10 16:56:30"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-10 16:56:30"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-13 22:15:41"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-13 22:15:41"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-13 22:15:43"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-13 22:20:22"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-13 22:20:22"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-13 22:20:22"}
+{"level":"info","message":"Email sent to hr1@example.com","timestamp":"2025-08-15 01:08:14"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-15 01:18:40"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-15 01:18:41"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-15 01:18:41"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-19 22:29:34"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-19 22:29:34"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-19 22:29:36"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-19 22:44:13"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-19 22:44:13"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-19 22:44:14"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-19 22:46:56"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-19 22:46:57"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-19 22:46:57"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-19 22:47:44"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-19 22:47:44"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-19 22:47:45"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-19 22:53:09"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-19 22:53:10"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-19 22:53:10"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:00:14"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:00:14"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:00:15"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:02:23"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:02:24"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:02:25"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:02:49"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:02:50"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:02:50"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:06:55"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:06:56"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:06:57"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:07:07"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:07:08"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:07:12"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:07:22"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:07:22"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:07:22"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-08-21 00:07:31"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-08-21 00:07:31"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-08-21 00:07:32"}
+{"level":"info","message":"Email sent to tl1@example.com","timestamp":"2025-09-03 00:19:54"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-09-03 00:19:55"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-09-03 00:19:57"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-09-03 01:14:55"}
+{"level":"info","message":"Email sent to hr1@example.com","timestamp":"2025-09-03 01:14:55"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-09-06 09:50:29"}
+{"level":"info","message":"Email sent to hr1@example.com","timestamp":"2025-09-06 09:50:29"}
+{"level":"info","message":"Email sent to hr1@example.com","timestamp":"2025-09-06 10:08:06"}
+{"level":"info","message":"Email sent to mianhamid6426@gmail.com","timestamp":"2025-09-06 10:08:07"}
+{"level":"info","message":"Email sent to employee1@example.com","timestamp":"2025-09-06 10:08:41"}
+{"level":"error","message":"Failed to send email to nounesfatimazahra@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3e740369f1esm1579598f8f.11 - gsmtp","timestamp":"2025-09-06 18:15:10"}
+{"level":"error","message":"Failed to send email to adminrh@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3e552618813sm3459319f8f.41 - gsmtp","timestamp":"2025-09-06 18:15:10"}
+{"level":"error","message":"Failed to send email to hr1@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45dd05d0c43sm62106565e9.2 - gsmtp","timestamp":"2025-09-06 18:15:10"}
+{"level":"error","message":"Failed to send email to zahrafatililo@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3cf275d2717sm35325469f8f.15 - gsmtp","timestamp":"2025-09-06 18:18:22"}
+{"level":"error","message":"Failed to send email to fpbafizffukkkwlhpt@fxavaj.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45b9bcda91dsm208104745e9.6 - gsmtp","timestamp":"2025-09-06 19:06:24"}
+{"level":"error","message":"Failed to send email to nounesfatimazahra@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45dcfcba94esm64312985e9.2 - gsmtp","timestamp":"2025-09-06 19:06:49"}
+{"level":"error","message":"Failed to send email to hr1@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45cb687fe4esm148845845e9.23 - gsmtp","timestamp":"2025-09-06 19:06:49"}
+{"level":"error","message":"Failed to send email to adminrh@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3d60d93b949sm25128183f8f.2 - gsmtp","timestamp":"2025-09-06 19:06:49"}
+{"level":"error","message":"Failed to send email to fpbafizffukkkwlhpt@fxavaj.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45b7e8ab14esm409867405e9.21 - gsmtp","timestamp":"2025-09-06 19:07:27"}
+{"level":"error","message":"Failed to send email to lora.nitzsche89@ethereal.email: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45dcff67787sm126316895e9.16 - gsmtp","timestamp":"2025-09-06 19:12:20"}
+{"level":"error","message":"Failed to send email to adminrh@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3d1007c0dc8sm33985601f8f.53 - gsmtp","timestamp":"2025-09-06 19:13:01"}
+{"level":"error","message":"Failed to send email to nounesfatimazahra@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3cf33fbb3cdsm19277182f8f.51 - gsmtp","timestamp":"2025-09-06 19:13:01"}
+{"level":"error","message":"Failed to send email to hr1@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3d66b013b7dsm24373572f8f.28 - gsmtp","timestamp":"2025-09-06 19:13:01"}
+{"level":"error","message":"Failed to send email to lora.nitzsche89@ethereal.email: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3cf3458a67fsm8426244f8f.62 - gsmtp","timestamp":"2025-09-06 19:13:35"}
+{"level":"error","message":"Failed to send email to t85009412@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45b7e7f14bbsm382621945e9.8 - gsmtp","timestamp":"2025-09-06 19:31:54"}
+{"level":"error","message":"Failed to send email to nounesfatimazahra@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3e411219ddfsm6300050f8f.57 - gsmtp","timestamp":"2025-09-06 19:33:18"}
+{"level":"error","message":"Failed to send email to adminrh@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3db9b973869sm16966856f8f.18 - gsmtp","timestamp":"2025-09-06 19:33:18"}
+{"level":"error","message":"Failed to send email to hr1@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3cf34493b8csm34795724f8f.59 - gsmtp","timestamp":"2025-09-06 19:33:18"}
+{"level":"error","message":"Failed to send email to t85009412@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45de229238fsm10640065e9.16 - gsmtp","timestamp":"2025-09-06 19:33:54"}
+{"level":"error","message":"Failed to send email to zahrafatililo@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45dda4f2a0dsm73432955e9.2 - gsmtp","timestamp":"2025-09-06 21:12:45"}
+{"level":"error","message":"Failed to send email to hr1@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3df4fd372ccsm13883505f8f.32 - gsmtp","timestamp":"2025-09-06 21:13:14"}
+{"level":"error","message":"Failed to send email to nounesfatimazahra@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3dedea839c1sm14213869f8f.63 - gsmtp","timestamp":"2025-09-06 21:13:14"}
+{"level":"error","message":"Failed to send email to adminrh@example.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-3e70d463163sm2483577f8f.22 - gsmtp","timestamp":"2025-09-06 21:14:26"}
+{"level":"error","message":"Failed to send email to zahrafatililo@gmail.com: Error: Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-45cb61377a7sm172742075e9.13 - gsmtp","timestamp":"2025-09-06 21:15:11"}
+{"level":"info","message":"Email sent to hr1@example.com","timestamp":"2025-09-06 21:27:42"}
+{"level":"info","message":"Email sent to adminrh@example.com","timestamp":"2025-09-06 21:27:43"}
+{"level":"info","message":"Email sent to nounesfatimazahra@gmail.com","timestamp":"2025-09-06 21:27:43"}
+{"level":"info","message":"Email sent to zahrafatililo@gmail.com","timestamp":"2025-09-06 21:28:18"}
+{"level":"info","message":"Email sent to nounesfatimazahra@gmail.com","timestamp":"2025-09-06 21:35:19"}
+{"level":"info","message":"Email sent to nurse1@example.com","timestamp":"2025-09-06 21:35:19"}
+{"level":"info","message":"Email sent to zahrafatililo@gmail.com","timestamp":"2025-09-06 21:36:13"}

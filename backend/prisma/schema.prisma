@@ -1,0 +1,215 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// =========================
+// User model
+// =========================
+model User {
+  id                        Int        @id @default(autoincrement())
+  email                     String     @unique
+  password                  String
+  firstName                 String?
+  lastName                  String?
+  fullName                  String?
+  avatar                    String?
+  phone                     String?
+  country                   String?
+  city                      String?
+  hireDate                  DateTime?
+  notificationPreference    Boolean    @default(true) @map("wantsNotification")
+  confidentialityPreference Boolean    @default(true)
+  department                Department @default(none)
+  role                      Role       @default(employee)
+  status                    UserStatus @default(active)
+  createdAt                 DateTime   @default(now()) @db.Timestamp(6)
+  updatedAt                 DateTime   @default(now()) @updatedAt
+
+  failedLoginAttempts Int       @default(0)
+  lockUntil           DateTime?
+
+  resetToken                 String?
+  resetTokenExpiresAt        DateTime?
+  verificationToken          String?
+  verificationTokenExpiresAt DateTime?
+  requests                   Request[]      @relation("UserToRequest")
+  notifications              Notification[] @relation("UserToNotification")
+  audits                     Audit[]
+}
+
+// =========================
+// Request model
+// =========================
+model Request {
+  id          Int           @id @default(autoincrement())
+  userId      Int
+  requestType RequestType
+  description String
+  status      RequestStatus @default(pending)
+  submittedAt DateTime      @default(now())
+  updatedAt   DateTime      @default(now()) @updatedAt
+
+  comment String?
+
+  // Relations
+  files         File[]
+  audits        Audit[]
+  notifications Notification[]
+  user          User           @relation("UserToRequest", fields: [userId], references: [id])
+
+  // Sub-request relations (1:1)
+  leaveRequest             LeaveRequest?
+  payslipRequest           PayslipRequest?
+  sickLeaveRequest         SickLeaveRequest?
+  workCertificateRequest          WorkCertificateRequest?
+  medicalFileUpdateRequest MedicalFileUpdateRequest?
+
+  @@index([userId])
+}
+
+model LeaveRequest {
+  id        Int      @id @default(autoincrement())
+  requestId Int      @unique
+  startDate DateTime
+  endDate   DateTime
+
+  request Request @relation(fields: [requestId], references: [id])
+}
+
+model PayslipRequest {
+  id           Int    @id @default(autoincrement())
+  requestId    Int    @unique
+  deliveryMode String
+
+  request Request @relation(fields: [requestId], references: [id])
+}
+
+model WorkCertificateRequest {
+  id        Int     @id @default(autoincrement())
+  requestId Int     @unique
+  purpose   String?
+
+  request Request @relation(fields: [requestId], references: [id])
+}
+
+model SickLeaveRequest {
+  id        Int      @id @default(autoincrement())
+  requestId Int      @unique
+  startDate DateTime
+  endDate   DateTime
+  sickDays  Int?
+
+  request Request @relation(fields: [requestId], references: [id])
+}
+
+model MedicalFileUpdateRequest {
+  id         Int       @id @default(autoincrement())
+  requestId  Int       @unique
+  mrid       String
+  notes      String? // optional field for employee's message
+  reviewedBy Int? // FK to Nurse (User.id)
+  reviewedAt DateTime?
+  statusNote String? // reason for approval/rejection
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @default(now()) @updatedAt
+
+  request Request @relation(fields: [requestId], references: [id])
+}
+
+// =========================
+// File model (was RequestFile)
+// =========================
+model File {
+  id           Int      @id @default(autoincrement())
+  requestId    Int
+  originalName String
+  storedName   String
+  filePath     String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @default(now()) @updatedAt
+
+  request Request @relation(fields: [requestId], references: [id])
+
+  @@index([requestId])
+}
+
+// =========================
+// Audit model (was RequestAudit)
+// =========================
+model Audit {
+  id        Int      @id @default(autoincrement())
+  requestId Int
+  field     String
+  oldValue  String?
+  newValue  String?
+  changedBy Int
+  changedAt DateTime @default(now())
+  request   Request  @relation(fields: [requestId], references: [id])
+  user      User     @relation(fields: [changedBy], references: [id])
+
+  @@index([requestId])
+  @@index([changedBy])
+}
+
+// =========================
+// Notification model
+// =========================
+model Notification {
+  id        Int      @id @default(autoincrement())
+  userId    Int?
+  requestId Int?
+  title     String
+  message   String
+  createdAt DateTime @default(now())
+  user      User?    @relation("UserToNotification", fields: [userId], references: [id])
+  request   Request? @relation(fields: [requestId], references: [id])
+
+  @@index([userId])
+  @@index([requestId])
+}
+
+// =========================
+// Enums
+// =========================
+enum Role {
+  admin
+  hr
+  tl
+  employee
+  nurse
+}
+
+enum Department {
+  none
+  hiring
+  technical
+  nurse
+  finance
+  operations
+  marketing
+}
+
+enum UserStatus {
+  active
+  onLeave
+}
+
+enum RequestType {
+  workCertificate
+  leave
+  payslip
+  complaint
+  sickLeave
+  medicalFileUpdate
+}
+
+enum RequestStatus {
+  pending
+  approved
+  rejected
+}
